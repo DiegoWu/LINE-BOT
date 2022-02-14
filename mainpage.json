@@ -1,0 +1,157 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "horizontal",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://cdn4.iconfinder.com/data/icons/e-commerce-181/512/477_profile__avatar__man_-512.png",
+              "size": "xxs"
+            },
+            {
+              "type": "text",
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "作者簡介",
+                  "size": "12px",
+                  "color": "#003366",
+                  "weight": "bold",
+                  "style": "italic"
+                }
+              ]
+            }
+          ],
+          "action": {
+            "type": "postback",
+            "data": "identification",
+            "label": "identification"
+          }
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://cdn-icons-png.flaticon.com/512/107/107765.png",
+              "size": "xxs"
+            },
+            {
+              "type": "text",
+              "text": "開發中zz",
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "開發中zz",
+                  "size": "12px",
+                  "color": "#003366",
+                  "weight": "bold",
+                  "style": "italic"
+                }
+              ]
+            }
+          ],
+          "action": {
+            "type": "postback",
+            "data": "fixing"
+          }
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://cdn0.iconfinder.com/data/icons/line-design-basic-set-7/24/new-product-promotion-deal-latest-512.png",
+              "size": "xxs"
+            },
+            {
+              "type": "text",
+              "text": "hello, world",
+              "contents": [
+                {
+                  "type": "span",
+                  "color": "#003366",
+                  "text": "新上架",
+                  "size": "12px",
+                  "weight": "bold",
+                  "style": "italic"
+                }
+              ],
+              "align": "center"
+            }
+          ],
+          "action": {
+            "type": "postback",
+            "data": "new"
+          }
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://cdn.iconscout.com/icon/premium/png-256-thumb/store-1598040-1352436.png",
+              "size": "xxs"
+            },
+            {
+              "type": "text",
+              "text": "貼圖商店",
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "貼圖商店",
+                  "size": "12px",
+                  "color": "#003366",
+                  "style": "italic",
+                  "weight": "bold"
+                }
+              ]
+            }
+          ],
+          "action": {
+            "type": "uri",
+            "uri": "https://store.line.me/stickershop/showcase/top/zh-Hant"
+          }
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://icon-library.com/images/instruction-icon/instruction-icon-16.jpg",
+              "size": "xxs"
+            },
+            {
+              "type": "text",
+              "text": "hello, world",
+              "contents": [
+                {
+                  "type": "span",
+                  "text": "指令教學",
+                  "weight": "bold",
+                  "size": "12px",
+                  "style": "italic",
+                  "decoration": "none",
+                  "color": "#003366"
+                }
+              ]
+            }
+          ],
+          "action": {
+            "type": "postback",
+            "data": "tipss"
+          }
+        }
+      ],
+      "backgroundColor": "#ffffb3"
+    }
+  }

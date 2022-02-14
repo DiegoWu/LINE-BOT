@@ -1,0 +1,117 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://i.imgur.com/63t2WiQ.jpg",
+    "margin": "none",
+    "align": "start",
+    "size": "full",
+    "aspectRatio": "23:17",
+    "aspectMode": "cover",
+    "offsetTop": "none",
+    "offsetBottom": "none"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Diego& Mitsuha ><",
+        "margin": "xs",
+        "size": "xl",
+        "position": "relative",
+        "align": "start",
+        "gravity": "top",
+        "adjustMode": "shrink-to-fit",
+        "color": "#ff8080",
+        "weight": "regular"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Mitsuha is so cute 🥰 ",
+            "margin": "sm",
+            "size": "md",
+            "weight": "regular",
+            "position": "relative",
+            "gravity": "center",
+            "color": "#9494b8",
+            "align": "start"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://i.imgur.com/iaFeOuK.png",
+                "size": "sm",
+                "position": "relative",
+                "margin": "none"
+              },
+              {
+                "type": "text",
+                "text": "https://github.com/DiegoWu/",
+                "gravity": "top",
+                "margin": "xs",
+                "size": "sm",
+                "color": "#9494b8",
+                "contents": []
+              }
+            ],
+            "position": "relative"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://i.imgur.com/tK3XDUW.png",
+                "size": "sm"
+              },
+              {
+                "type": "text",
+                "text": "930404d@gmail.com",
+                "size": "sm",
+                "color": "#9494b8"
+              }
+            ]
+          }
+        ],
+        "margin": "sm"
+      }
+    ],
+    "position": "relative",
+    "spacing": "sm",
+    "margin": "sm",
+    "alignItems": "flex-start",
+    "borderWidth": "none",
+    "paddingAll": "none",
+    "paddingTop": "xs"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "hihihi",
+          "uri": "https://www.bemytravelmuse.com/how-to-say-hello-in-100-of-the-worlds-most-spoken-languages/"
+        }
+      }
+    ],
+    "action": {
+      "type": "uri",
+      "label": "Linkedin",
+      "uri": "http://linecorp.com/"
+    },
+    "backgroundColor": "#e6ffff"
+  }
+}

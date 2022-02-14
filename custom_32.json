@@ -1,0 +1,320 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": ">白白日記 · 上班去<",
+          "size": "lg",
+          "color": "#ffbf00"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://stickershop.line-scdn.net/stickershop/v1/product/9601/LINEStorePC/main.png;compress=true",
+      "size": "full",
+      "aspectMode": "cover",
+      "margin": "none",
+      "gravity": "top",
+      "aspectRatio": "9:8",
+      "action": {
+        "type": "uri",
+        "uri": "http://linecorp.com/"
+      }
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "1️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069248&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "2️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069249&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "3️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069250&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "4️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069251&pkg=9601"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "5️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069252&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "6️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069253&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "7️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069254&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "8️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069255&pkg=9601"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "9️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069256&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "🔟",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069257&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "11️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069258&pkg=9601"
+              },
+              "margin": "none"
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "12️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069259&pkg=9601"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "13️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069260&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "14️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069261&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "15️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069262&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "16️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069263&pkg=9601"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "17️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "18️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "19️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "20️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "21️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "22️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "23️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "24️⃣",
+                "uri": "http://linecorp.com/"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "25️⃣"
+            },
+            {
+              "type": "text",
+              "text": "26️⃣"
+            },
+            {
+              "type": "text",
+              "text": "27️⃣"
+            },
+            {
+              "type": "text",
+              "text": "28️⃣"
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "text",
+              "text": "29️⃣"
+            },
+            {
+              "type": "text",
+              "text": "30️⃣"
+            },
+            {
+              "type": "text",
+              "text": "31️⃣"
+            },
+            {
+              "type": "text",
+              "text": "32️⃣"
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "@ みやみず ",
+          "color": "#c2c2d6",
+          "position": "relative",
+          "align": "center"
+        }
+      ]
+    }
+  }

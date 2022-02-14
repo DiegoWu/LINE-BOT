@@ -1,0 +1,1 @@
+print(str("[DRAGONBALL Z BOO]https://line.me/S/sticker/3212/?lang=en&utm_source=gnsh_stickerDetail").find('https://line.me/S/sticker/'))

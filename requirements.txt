@@ -1,2 +1,8 @@
 line-bot-sdk
 flask
+json 
+requeest 
+re
+BeautifulSoup 
+string 
+random 
