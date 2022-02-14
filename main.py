@@ -11,7 +11,7 @@ import re
 import requests as rs
 from bs4 import BeautifulSoup as bs
 import random as rd
-import string 
+import string  
 
 app = Flask(__name__)
 # LINE BOT info
