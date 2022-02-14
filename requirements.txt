@@ -1,2 +1,5 @@
 line-bot-sdk
 flask
+requests
+bs4
+re
