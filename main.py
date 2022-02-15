@@ -329,7 +329,7 @@ def handle_message(event):
             #print(length)
             if message.text.lower()[0:6]== 'custom' or str(message.text).find('https://line.me/S/sticker/')!= -1 or  str(message.text).find('https://store.line.me/stickershop/')!= -1: 
 
-                with open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+                 async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
                     
                     load_dict= json.load(load_f)
                     load_dict['hero']['url']= coverlist[0]
@@ -342,7 +342,7 @@ def handle_message(event):
                             load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
                             count+= 1
                     
-                    with open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+                     async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
 
                         json.dump(load_dict, f, ensure_ascii=False)
                 
@@ -391,7 +391,7 @@ def handle_message(event):
                 v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
         length= len(sidnumlist)/8
 
-        with open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+         async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
                     
             load_dict= json.load(load_f)
             load_dict['hero']['url']= coverlist[0]
@@ -404,7 +404,7 @@ def handle_message(event):
                     load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
                     count+= 1
             
-            with open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+             async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
 
                 json.dump(load_dict, f, ensure_ascii=False)
         
