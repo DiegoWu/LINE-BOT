@@ -8,7 +8,8 @@ from linebot.exceptions import (
 from linebot.models import *
 import json 
 import re
-import requests as rs
+import aiohttp 
+import asyncio 
 from bs4 import BeautifulSoup as bs
 import random as rd
 import string  
@@ -33,13 +34,13 @@ def callback():
     return 'OK'
     
 # custom crawler 
-def custom_crawler(pkg):   
+async def custom_crawler(pkg):   
     global sidnumlist
     global coverlist
     global headerlist
     global sidelement
     global anilist 
-    rr= rs.get("https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg))
+    rr= await aiohttp.requests.get("https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg))
     soup= bs(rr.text, "html.parser")
     name1= str(soup.find_all("span", {"class": "mdCMN09Image"}))
     name2= str(soup.find_all("div", {"class": "mdCMN38Img"}, limit= 1))
@@ -58,7 +59,7 @@ def custom_crawler(pkg):
 
 #new_crawler
 
-def newest_crawler(): 
+async def newest_crawler(): 
     global tlelist
     global coverlist
     global headerlist
@@ -69,7 +70,7 @@ def newest_crawler():
     ttttemp= []
     tempnumber= []
     tt= []
-    r= rs.get("https://store.line.me/home/zh-Hant")
+    r= await aiohttp.requests.get("https://store.line.me/home/zh-Hant")
     soup=  bs(r.text, "html.parser")
     name1= (soup.find_all("div", {"class": "mdCMN03Img"} ))
     name2= (soup.find_all("li", {"class": "mdMN04Li"}) )
@@ -87,7 +88,7 @@ def newest_crawler():
         ttemp.append(ele)
     newlist= ttemp+ elelist
     for ele in newlist: 
-        r= rs.get(ele)
+        r= await aiohttp.requests.get(ele)
         soup= bs(r.text, "html.parser")
         cover= str(soup.find_all("img", {"class": "FnImage"}, limit= 1))
         header= str(soup.find_all("p", {"class": "mdCMN38Item01Ttl"}, limit= 1))
@@ -103,8 +104,8 @@ def newest_crawler():
     numberlist= tempnumber
 
 # following newest_crawler 
-def following_newest_crawler():
-    with open("latest.json",'r',encoding='utf-8') as load_f:
+async def following_newest_crawler():
+    async with aiofiles.open("latest.json",'r',encoding='utf-8') as load_f:
         load_dict= json.load(load_f)
         for i in range(len(tlelist)): 
             load_dict['contents'][0]['body']['contents'][i]['url']= tlelist[i][0]
@@ -113,7 +114,7 @@ def following_newest_crawler():
             load_dict['contents'][i+1]['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt=numberlist[i][0])
             load_dict['contents'][i+1]['body']['contents'][0]['text']= headerlist[i][0]
             load_dict['contents'][i+1]['footer']['contents'][0]['action']['Text']= "custom_"+numberlist[i][0]
-        with open("latest.json", 'w', encoding= 'utf-8') as f:
+        async with aiofiles.open("latest.json", 'w', encoding= 'utf-8') as f:
                 
                 json.dump(load_dict, f, ensure_ascii= False)
 
@@ -263,6 +264,10 @@ def handle_message(event):
 
             print("not my business")
 
+        elif message.text== 'random':
+
+            print("random")
+
         else:
 
             pkg= message.text
@@ -369,7 +374,7 @@ def handle_message(event):
             contents= new
         )
         line_bot_api.reply_message(reply_token, FlexMessage)
-        
+
     elif message.text== 'random': 
 
         newest_crawler()
@@ -412,5 +417,6 @@ def handle_message(event):
      
 import os
 if __name__ == "__main__":
+    #asyncio.run(main)
     port = int(os.environ.get('PORT', 80))
     app.run(host='0.0.0.0', port=port)  
