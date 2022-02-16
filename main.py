@@ -103,7 +103,7 @@ async def newest_crawler():
     coverlist= tttemp
     headerlist= ttttemp 
     numberlist= tempnumber
-
+    print(numberlist)
 # following newest_crawler 
 async def following_newest_crawler():
     async with aiofiles.open("latest.json",'r',encoding='utf-8') as load_f:
@@ -118,6 +118,34 @@ async def following_newest_crawler():
         async with aiofiles.open("latest.json", 'w', encoding= 'utf-8') as f:
                 
                 json.dump(load_dict, f, ensure_ascii= False)
+
+# getting random stickers  
+async def random_fuction():
+    v= [] # url for users 
+    for i in range(0, int(len(sidnumlist)), 2):
+        if len(anilist[0])>= 23:  
+            v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
+        else: 
+            v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
+    length= len(sidnumlist)/8
+
+    async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+                
+        load_dict= json.load(load_f)
+        load_dict['hero']['url']= coverlist[0]
+        load_dict['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkgg)
+        load_dict['header']['contents'][0]['text']= headerlist[0]
+        count= 0
+
+        for i in range(int(length)):
+            for j in range(4): 
+                load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
+                count+= 1
+        
+        async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+
+            json.dump(load_dict, f, ensure_ascii=False)
+    
 
 #follow event 
 @handler.add(FollowEvent)
@@ -175,7 +203,7 @@ def handle_postback(event):
             contents= new
         )
         line_bot_api.reply_message(event.reply_token, FlexMessage)
-
+    '''
     elif data== 'random':
         
         newest_crawler()
@@ -183,40 +211,17 @@ def handle_postback(event):
         pkgg= numberlist[rd.randint(0, 10)][0]
         
         custom_crawler(pkgg)
-        
-        v= [] # url for users 
-        for i in range(0, int(len(sidnumlist)), 2):
-            if len(anilist[0])>= 23:  
-                v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
-            else: 
-                v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
-        length= len(sidnumlist)/8
 
-        with open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
-                    
-            load_dict= json.load(load_f)
-            load_dict['hero']['url']= coverlist[0]
-            load_dict['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkgg)
-            load_dict['header']['contents'][0]['text']= headerlist[0]
-            count= 0
-
-            for i in range(int(length)):
-                for j in range(4): 
-                    load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
-                    count+= 1
-            
-            with open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
-
-                json.dump(load_dict, f, ensure_ascii=False)
+        random_fuction()
         
         cst= json.load(open("custom_{}.json".format(int(len(sidnumlist)/2)),'r'))
+
         FlexMessage= FlexSendMessage(
             alt_text= 'custom', 
             contents= cst
         )  
         line_bot_api.reply_message(event.reply_token, FlexMessage)
-
-
+    '''
 # Message event
 @handler.add(MessageEvent)
 def handle_message(event):
@@ -297,7 +302,7 @@ def handle_message(event):
         FlexMessage= FlexSendMessage(
             alt_text= 'mainpage', 
             contents= cnt
-        )  
+        )
         line_bot_api.reply_message(reply_token, FlexMessage)
 
     elif message.text.lower() == 'profile' :
@@ -328,31 +333,57 @@ def handle_message(event):
                     v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkg))
             length= len(sidnumlist)/8
             #print(length)
+
             if message.text.lower()[0:6]== 'custom' or str(message.text).find('https://line.me/S/sticker/')!= -1 or  str(message.text).find('https://store.line.me/stickershop/')!= -1: 
-
-                with open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
-                    
-                    load_dict= json.load(load_f)
-                    load_dict['hero']['url']= coverlist[0]
-                    load_dict['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg)
-                    load_dict['header']['contents'][0]['text']= headerlist[0]
-                    count= 0
-    
-                    for i in range(int(length)):
-                        for j in range(4): 
-                            load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
-                            count+= 1
-                    
-                    with open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
-
-                        json.dump(load_dict, f, ensure_ascii=False)
                 
-                cst= json.load(open("custom_{}.json".format(int(len(sidnumlist)/2)),'r'))
-                FlexMessage= FlexSendMessage(
-                    alt_text= 'custom_sticker', 
-                    contents= cst
-                )  
-                line_bot_api.reply_message(reply_token, FlexMessage)
+                if (message.text.lower()[-1].isdigit() and message.text.lower()[-2]== " ") or (message.text.lower()[-2].isdigit() and message.text.lower()[-3]== " "):
+                    
+                    if message.text.lower()[-1].isdigit() and message.text.lower()[-2]== " ":
+                        num= message.text.lower()[-1]
+                    else:
+                        num= message.text.lower()[-2]+ message.text.lower()[-1]
+
+                    with open("single_sticker.json", 'r', encoding='utf-8') as load_f:
+                    
+                        load_dict= json.load(load_f)
+                        load_dict['hero']['contents'][0]['action']['uri']= v[int(num)-1]
+                        load_dict['body']['contents'][0]['action']['uri']= v[int(num)-1]
+                        with open("single_sticker.json", 'w', encoding='utf-8') as f:
+
+                                json.dump(load_dict, f, ensure_ascii=False)
+
+                    cst= json.load(open("single_sticker.json", 'r'))
+                    FlexMessage= FlexSendMessage(
+                        alt_text= 'single sticker', 
+                        contents= cst
+                    )  
+                    line_bot_api.reply_message(reply_token, FlexMessage)
+
+                else : 
+
+                    with open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+                        
+                        load_dict= json.load(load_f)
+                        load_dict['hero']['url']= coverlist[0]
+                        load_dict['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg)
+                        load_dict['header']['contents'][0]['text']= headerlist[0]
+                        count= 0
+        
+                        for i in range(int(length)):
+                            for j in range(4): 
+                                load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
+                                count+= 1
+                        
+                        with open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+
+                            json.dump(load_dict, f, ensure_ascii=False)
+                    
+                    cst= json.load(open("custom_{}.json".format(int(len(sidnumlist)/2)),'r'))
+                    FlexMessage= FlexSendMessage(
+                        alt_text= 'custom_sticker', 
+                        contents= cst
+                    )  
+                    line_bot_api.reply_message(reply_token, FlexMessage)
 
             else: 
 
