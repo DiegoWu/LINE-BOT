@@ -331,10 +331,7 @@ def handle_message(event):
                 else: 
                     v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkg))
 
-
-
             length= len(sidnumlist)/8
-
             
             if message.text.lower()[0:6]== 'custom' or str(message.text).find('https://line.me/S/sticker/')!= -1 or  str(message.text).find('https://store.line.me/stickershop/')!= -1: 
                 
@@ -362,8 +359,8 @@ def handle_message(event):
                     line_bot_api.reply_message(reply_token, FlexMessage)
 
                 #getting connection of the sticker 
-                
-                else if (message.text.lower()[0:6]== 'custom' or str(message.text).find('https://line.me/S/sticker/')!= -1 or  str(message.text).find('https://store.line.me/stickershop/')!= -1) and (str(message.text).find('connection')!= -1 or (str(message.text).find('連結')!= -1): 
+
+                elif str(message.text).find('connection')!= -1 : 
 
                     with open("connection_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
                         
