@@ -360,7 +360,7 @@ def handle_message(event):
 
                 #getting connection of the sticker 
 
-                elif str(message.text).find('connection')!= -1 : 
+                elif str(message.text).find('connection')!= -1 or str(message.text).find('連結')!= -1 : 
 
                     with open("connection_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
                         
