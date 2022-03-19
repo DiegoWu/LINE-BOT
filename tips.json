@@ -165,7 +165,7 @@
           },
           {
             "type": "text",
-            "text": "這項功能因不明原因，需要等待至多五秒鐘QQ",
+            "text": "這項功能因不明原因，可能等待至多五秒鐘QQ",
             "size": "12px"
           },
           {
@@ -211,9 +211,14 @@
           },
           {
             "type": "text",
-            "text": "最後一步再以空格隔開並加上貼圖的順序數字即可",
+            "text": "最後一步再以空格隔開",
             "size": "15px",
-            "weight": "bold"
+            "weight": "regular",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "並加上貼圖的順序數字即可"
           },
           {
             "type": "separator"

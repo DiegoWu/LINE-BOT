@@ -1,0 +1,357 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": ">白白日記 · 上班去<",
+          "size": "lg",
+          "color": "#ffbf00"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://stickershop.line-scdn.net/stickershop/v1/product/9601/LINEStorePC/main.png;compress=true",
+      "size": "full",
+      "aspectMode": "cover",
+      "margin": "none",
+      "gravity": "top",
+      "aspectRatio": "9:8",
+      "action": {
+        "type": "uri",
+        "uri": "http://linecorp.com/"
+      }
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "1️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385118&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "2️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385119&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "3️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385120&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "4️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385121&pkg=10459234"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "5️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385122&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "6️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385123&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "7️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385124&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "8️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385125&pkg=10459234"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "9️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385126&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "🔟",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385127&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "11️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385128&pkg=10459234"
+              },
+              "margin": "none"
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "12️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385129&pkg=10459234"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "13️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385130&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "14️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385131&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "15️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385132&pkg=10459234"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "16️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385133&pkg=10459234"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "17️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676022&pkg=25451"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "18️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676023&pkg=25451"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "19️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676024&pkg=25451"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "20️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676025&pkg=25451"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "21️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676026&pkg=25451"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "22️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676027&pkg=25451"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "23️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676028&pkg=25451"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "24️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676029&pkg=25451"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "25️⃣",
+                "text": "hello"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "26️⃣",
+                "text": "hello"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "27️⃣",
+                "text": "hello"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "28️⃣",
+                "text": "hello"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "29️⃣",
+                "text": "hello"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "30️⃣",
+                "text": "hello"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "31️⃣",
+                "text": "hello"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "32️⃣",
+                "text": "hello"
+              }
+            }
+          ],
+          "action": {
+            "type": "uri",
+            "label": "31️⃣",
+            "uri": "http://linecorp.com/"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "@ みやみず ",
+          "color": "#c2c2d6",
+          "position": "relative",
+          "align": "center"
+        }
+      ]
+    }
+  }

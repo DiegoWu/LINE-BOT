@@ -5,15 +5,15 @@ from linebot import (
 from linebot.exceptions import (
     InvalidSignatureError
 )
-from linebot.models import *
+from linebot.models import *  
 import json 
-import re
+import re 
 import aiohttp 
 import asyncio 
 import requests 
 from bs4 import BeautifulSoup as bs
 import random as rd
-import string  
+import string 
 
 app = Flask(__name__)
 # LINE BOT info
@@ -186,7 +186,6 @@ def handle_postback(event):
         )
         line_bot_api.reply_message(event.reply_token, FlexMessage)
 
-
     elif data== 'fixing': 
         
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text= "尚未完工QQ"))
@@ -331,9 +330,12 @@ def handle_message(event):
                     v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid={}&pkg={}".format(sidnumlist[i], pkg))
                 else: 
                     v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkg))
-            length= len(sidnumlist)/8
-            #print(length)
 
+
+
+            length= len(sidnumlist)/8
+
+            
             if message.text.lower()[0:6]== 'custom' or str(message.text).find('https://line.me/S/sticker/')!= -1 or  str(message.text).find('https://store.line.me/stickershop/')!= -1: 
                 
                 if (message.text.lower()[-1].isdigit() and message.text.lower()[-2]== " ") or (message.text.lower()[-2].isdigit() and message.text.lower()[-3]== " "):
@@ -355,6 +357,34 @@ def handle_message(event):
                     cst= json.load(open("single_sticker.json", 'r'))
                     FlexMessage= FlexSendMessage(
                         alt_text= 'single sticker', 
+                        contents= cst
+                    )  
+                    line_bot_api.reply_message(reply_token, FlexMessage)
+
+                #getting connection of the sticker 
+                
+                else if (message.text.lower()[0:6]== 'custom' or str(message.text).find('https://line.me/S/sticker/')!= -1 or  str(message.text).find('https://store.line.me/stickershop/')!= -1) and (str(message.text).find('connection')!= -1 or (str(message.text).find('連結')!= -1): 
+
+                    with open("connection_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+                        
+                        load_dict= json.load(load_f)
+                        load_dict['hero']['url']= coverlist[0]
+                        load_dict['hero']['action']['text']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg)
+                        load_dict['header']['contents'][0]['text']= headerlist[0]
+                        count= 0
+        
+                        for i in range(int(length)):
+                            for j in range(4): 
+                                load_dict['body']['contents'][i]['contents'][j]['action']['text']= v[count]
+                                count+= 1
+                        
+                        with open("connection_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+
+                            json.dump(load_dict, f, ensure_ascii=False)
+                    
+                    cst= json.load(open("connection_{}.json".format(int(len(sidnumlist)/2)),'r'))
+                    FlexMessage= FlexSendMessage(
+                        alt_text= 'connection_sticker', 
                         contents= cst
                     )  
                     line_bot_api.reply_message(reply_token, FlexMessage)
@@ -410,6 +440,5 @@ def handle_message(event):
 
 import os
 if __name__ == "__main__":
-    #asyncio.run(main)
     port = int(os.environ.get('PORT', 80))
     app.run(host='0.0.0.0', port=port)  

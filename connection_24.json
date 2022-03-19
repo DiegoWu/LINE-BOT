@@ -36,33 +36,33 @@
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "1️⃣",
-                "uri": "http://linecorp.com/"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385118&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "2️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676007&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385119&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "3️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676008&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385120&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "4️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676009&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385121&pkg=10459234"
               }
             }
           ]
@@ -74,33 +74,33 @@
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "5️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676010&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385122&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "6️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676011&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385123&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "7️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676012&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385124&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "8️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676013&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385125&pkg=10459234"
               }
             }
           ]
@@ -112,34 +112,34 @@
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "9️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676014&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385126&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "🔟",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676015&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385127&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "11️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676016&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385128&pkg=10459234"
               },
               "margin": "none"
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "12️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676017&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385129&pkg=10459234"
               }
             }
           ]
@@ -151,33 +151,33 @@
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "13️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676018&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385130&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "14️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676019&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385131&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "15️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676020&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385132&pkg=10459234"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "16️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676021&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid=276385133&pkg=10459234"
               }
             }
           ]
@@ -189,33 +189,33 @@
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "17️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676022&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676022&pkg=25451"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "18️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676023&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676023&pkg=25451"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "19️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676024&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676024&pkg=25451"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "20️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676025&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676025&pkg=25451"
               }
             }
           ]
@@ -227,33 +227,33 @@
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "21️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676026&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676026&pkg=25451"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "22️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676027&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676027&pkg=25451"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "23️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676028&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676028&pkg=25451"
               }
             },
             {
               "type": "button",
               "action": {
-                "type": "uri",
+                "type": "message",
                 "label": "24️⃣",
-                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676029&pkg=25451"
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=475676029&pkg=25451"
               }
             }
           ]
