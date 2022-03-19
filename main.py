@@ -366,7 +366,7 @@ def handle_message(event):
                         
                         load_dict= json.load(load_f)
                         load_dict['hero']['url']= coverlist[0]
-                        load_dict['hero']['action']['url']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg)
+                        load_dict['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg)
                         load_dict['header']['contents'][0]['text']= headerlist[0]
                         count= 0
         
