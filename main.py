@@ -35,6 +35,7 @@ def callback():
     return 'OK'
     
 # custom crawler 
+
 def custom_crawler(pkg):   
     global sidnumlist
     global coverlist
@@ -104,7 +105,9 @@ async def newest_crawler():
     headerlist= ttttemp 
     numberlist= tempnumber
     print(numberlist)
+
 # following newest_crawler 
+
 async def following_newest_crawler():
     async with aiofiles.open("latest.json",'r',encoding='utf-8') as load_f:
         load_dict= json.load(load_f)
@@ -120,13 +123,14 @@ async def following_newest_crawler():
                 json.dump(load_dict, f, ensure_ascii= False)
 
 # getting random stickers  
+# v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
 async def random_fuction():
     v= [] # url for users 
     for i in range(0, int(len(sidnumlist)), 2):
         if len(anilist[0])>= 23:  
-            v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
+            v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=yes&stickerId={}&packageId={}".format(sidnumlist[i], pkgg))
         else: 
-            v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
+            v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=no&stickerId={}&packageId={}".format(sidnumlist[i], pkgg))
     length= len(sidnumlist)/8
 
     async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
@@ -327,12 +331,14 @@ def handle_message(event):
             v= [] # url for users 
             for i in range(0, int(len(sidnumlist)), 2):
                 if len(anilist[0])>= 23:  
-                    v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid={}&pkg={}".format(sidnumlist[i], pkg))
+                    v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=yes&stickerId={}&packageId={}".format(sidnumlist[i], pkgg))
                 else: 
-                    v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkg))
+                    v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=no&stickerId={}&packageId={}".format(sidnumlist[i], pkgg))
 
             length= len(sidnumlist)/8
             
+            #custom sticker checking 
+
             if message.text.lower()[0:6]== 'custom' or str(message.text).find('https://line.me/S/sticker/')!= -1 or  str(message.text).find('https://store.line.me/stickershop/')!= -1: 
                 
                 if (message.text.lower()[-1].isdigit() and message.text.lower()[-2]== " ") or (message.text.lower()[-2].isdigit() and message.text.lower()[-3]== " "):
@@ -385,6 +391,8 @@ def handle_message(event):
                         contents= cst
                     )  
                     line_bot_api.reply_message(reply_token, FlexMessage)
+                
+                # normal custom_sticker 
 
                 else : 
 
