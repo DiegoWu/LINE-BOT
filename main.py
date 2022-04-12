@@ -331,9 +331,9 @@ def handle_message(event):
             v= [] # url for users 
             for i in range(0, int(len(sidnumlist)), 2):
                 if len(anilist[0])>= 23:  
-                    v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=yes&stickerId={}&packageId={}".format(sidnumlist[i], pkgg))
+                    v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=yes&stickerId={}&packageId={}".format(sidnumlist[i], pkg))
                 else: 
-                    v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=no&stickerId={}&packageId={}".format(sidnumlist[i], pkgg))
+                    v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=no&stickerId={}&packageId={}".format(sidnumlist[i], pkg))
 
             length= len(sidnumlist)/8
             
@@ -403,7 +403,7 @@ def handle_message(event):
                         load_dict['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt= pkg)
                         load_dict['header']['contents'][0]['text']= headerlist[0]
                         count= 0
-        
+                        
                         for i in range(int(length)):
                             for j in range(4): 
                                 load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
