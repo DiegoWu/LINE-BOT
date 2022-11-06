@@ -1,0 +1,283 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "hello, world",
+            "contents": [
+              {
+                "type": "span",
+                "color": "#1a3300",
+                "text": "獲得貼圖package說明",
+                "size": "20px",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "方法一(應用程式內):",
+            "color": "#1a3300",
+            "size": "18px",
+            "weight": "bold"
+          }
+        ],
+        "backgroundColor": "#e6fff7"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "step 1 至貼圖商店選任一貼圖",
+            "size": "15px"
+          },
+          {
+            "type": "text",
+            "text": "step2 點選下面複製連結(copy link)"
+          },
+          {
+            "type": "text",
+            "text": "step2 or 分享該貼圖至line聊天室"
+          },
+          {
+            "type": "text",
+            "text": "step3 貼在有小小葉的聊天室中"
+          },
+          {
+            "type": "separator"
+          }
+        ],
+        "backgroundColor": "#e6ffee"
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "hello, world",
+            "contents": [
+              {
+                "type": "span",
+                "text": "獲得貼圖package說明",
+                "size": "20px",
+                "color": "#1a3300",
+                "weight": "bold"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "text": "方法二(網頁版適用):",
+            "size": "18px",
+            "weight": "bold",
+            "color": "#1a3300"
+          }
+        ],
+        "backgroundColor": "#e6fff7"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "step1 點開該貼圖之網址",
+            "size": "15px"
+          },
+          {
+            "type": "text",
+            "text": "step2 紀錄一串最長的數字",
+            "size": "15px"
+          },
+          {
+            "type": "text",
+            "text": "step3 在聊天室打上custom ",
+            "size": "15px"
+          },
+          {
+            "type": "text",
+            "text": "step4 將該組數字貼在custom後",
+            "size": "15px"
+          },
+          {
+            "type": "separator"
+          }
+        ],
+        "backgroundColor": "#e6ffee"
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "hello, world",
+            "contents": [
+              {
+                "type": "span",
+                "text": "最新貼圖資訊(11組)",
+                "size": "20px",
+                "weight": "bold",
+                "color": "#1a3300"
+              }
+            ]
+          }
+        ],
+        "backgroundColor": "#e6fff7"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "輸入latest, newest or 最新上架",
+            "weight": "bold",
+            "size": "16px"
+          },
+          {
+            "type": "text",
+            "text": "Notes: "
+          },
+          {
+            "type": "text",
+            "text": "這項功能因不明原因，可能等待至多五秒鐘QQ",
+            "size": "12px"
+          },
+          {
+            "type": "text",
+            "text": "只有11組的原因是line訊息推播本身的限制",
+            "size": "12px"
+          },
+          {
+            "type": "separator"
+          }
+        ],
+        "backgroundColor": "#e6ffee"
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "獲取單一貼圖說明:",
+            "size": "20px",
+            "color": "#1a3300",
+            "weight": "bold"
+          }
+        ],
+        "backgroundColor": "#e6fff7"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "規則同獲取貼圖package",
+            "size": "15px",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "最後一步再以空格隔開",
+            "size": "15px",
+            "weight": "regular",
+            "contents": []
+          },
+          {
+            "type": "text",
+            "text": "並加上貼圖的順序數字即可"
+          },
+          {
+            "type": "separator"
+          }
+        ],
+        "backgroundColor": "#e6ffee"
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "其他指令",
+            "size": "20px",
+            "weight": "bold",
+            "color": "#1a3300"
+          }
+        ],
+        "backgroundColor": "#e6fff7"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "關閉指令偵測：",
+            "weight": "bold",
+            "size": "15px"
+          },
+          {
+            "type": "text",
+            "text": "小小葉listen! or 小小葉聽！",
+            "size": "15px"
+          },
+          {
+            "type": "text",
+            "text": "將小小葉請離群組：",
+            "weight": "bold",
+            "size": "15px"
+          },
+          {
+            "type": "text",
+            "text": "小小葉掰掰 or 小小葉byebye",
+            "size": "15px"
+          },
+          {
+            "type": "separator"
+          }
+        ],
+        "backgroundColor": "#e6ffee"
+      }
+    }
+  ]
+}

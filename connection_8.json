@@ -1,0 +1,124 @@
+{
+    "type": "bubble",
+    "header": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": ">白白日記 · 上班去<",
+          "size": "lg",
+          "color": "#ffbf00"
+        }
+      ]
+    },
+    "hero": {
+      "type": "image",
+      "url": "https://stickershop.line-scdn.net/stickershop/v1/product/9601/LINEStorePC/main.png;compress=true",
+      "size": "full",
+      "aspectMode": "cover",
+      "margin": "none",
+      "gravity": "top",
+      "aspectRatio": "9:8",
+      "action": {
+        "type": "uri",
+        "label": "action",
+        "uri": "http://linecorp.com/"
+      }
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "1️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069248&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "2️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069249&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "3️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069250&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "4️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069251&pkg=9601"
+              }
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "5️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069252&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "6️⃣",
+                "uri": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069253&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "7️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069254&pkg=9601"
+              }
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "message",
+                "label": "8️⃣",
+                "text": "line://app/1602687308-GXq4Vvk9?type=sticker&stk=anim&sid=21069255&pkg=9601"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "text": "@ dddddiego ",
+          "color": "#c2c2d6",
+          "position": "relative",
+          "align": "center"
+        }
+      ]
+    }
+  }
