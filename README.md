@@ -1,2 +1,2 @@
 # LINE-BOT
-# currently broken for some reason QQ
+# currently broken for some reasons QQ
