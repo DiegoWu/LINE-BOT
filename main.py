@@ -123,7 +123,6 @@ async def following_newest_crawler():
                 json.dump(load_dict, f, ensure_ascii= False)
 
 # getting random stickers  
-# v.append("line://app/1602687308-GXq4Vvk9?type=sticker&stk=noanim&sid={}&pkg={}".format(sidnumlist[i], pkgg))
 async def random_fuction():
     v= [] # url for users 
     for i in range(0, int(len(sidnumlist)), 2):
@@ -206,25 +205,6 @@ def handle_postback(event):
             contents= new
         )
         line_bot_api.reply_message(event.reply_token, FlexMessage)
-    '''
-    elif data== 'random':
-        
-        newest_crawler()
-
-        pkgg= numberlist[rd.randint(0, 10)][0]
-        
-        custom_crawler(pkgg)
-
-        random_fuction()
-        
-        cst= json.load(open("custom_{}.json".format(int(len(sidnumlist)/2)),'r'))
-
-        FlexMessage= FlexSendMessage(
-            alt_text= 'custom', 
-            contents= cst
-        )  
-        line_bot_api.reply_message(event.reply_token, FlexMessage)
-    '''
 # Message event
 @handler.add(MessageEvent)
 def handle_message(event):
@@ -236,13 +216,6 @@ def handle_message(event):
     reply_token = event.reply_token
     message = event.message
     #profile = line_bot_api.get_profile(user_id)
-    '''
-    print(type(profile))
-    with open("userid.json", 'w', encoding='utf-8') as u:
-        json.dump(profile, u, ensure_ascii=False)
-    uuserid= json.load(open('userid.json','r'))
-    print(uuserid)
-    '''
 
     if message_type== 'text': # text preprocessing 
         print(message.text)
