@@ -13,7 +13,7 @@ import asyncio
 import requests 
 from bs4 import BeautifulSoup as bs
 import random as rd
-import string 
+
 
 app = Flask(__name__)
 # LINE BOT info
@@ -109,7 +109,7 @@ async def newest_crawler():
 # following newest_crawler 
 
 async def following_newest_crawler():
-    async with aiofiles.open("latest.json",'r',encoding='utf-8') as load_f:
+    async with aiofiles.open("./pages/latest.json",'r',encoding='utf-8') as load_f:
         load_dict= json.load(load_f)
         for i in range(len(tlelist)): 
             load_dict['contents'][0]['body']['contents'][i]['url']= tlelist[i][0]
@@ -118,7 +118,7 @@ async def following_newest_crawler():
             load_dict['contents'][i+1]['hero']['action']['uri']= "https://store.line.me/stickershop/product/{intt}/zh-Hant?page=1".format(intt=numberlist[i][0])
             load_dict['contents'][i+1]['body']['contents'][0]['text']= headerlist[i][0]
             load_dict['contents'][i+1]['footer']['contents'][0]['action']['Text']= "custom_"+numberlist[i][0]
-        async with aiofiles.open("latest.json", 'w', encoding= 'utf-8') as f:
+        async with aiofiles.open("./pages/latest.json", 'w', encoding= 'utf-8') as f:
                 
                 json.dump(load_dict, f, ensure_ascii= False)
 
@@ -133,7 +133,7 @@ async def random_fuction():
             v.append("https://liff.line.me/1657024923-2r46WKKN?auto=yes&type=stickerimage&animation=no&stickerId={}&packageId={}".format(sidnumlist[i], pkgg))
     length= len(sidnumlist)/8
 
-    async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+    async with aiofiles.open("./pages/custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
                 
         load_dict= json.load(load_f)
         load_dict['hero']['url']= coverlist[0]
@@ -146,7 +146,7 @@ async def random_fuction():
                 load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
                 count+= 1
         
-        async with aiofiles.open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+        async with aiofiles.open("./pages/custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
 
             json.dump(load_dict, f, ensure_ascii=False)
     
@@ -174,7 +174,7 @@ def handle_postback(event):
 
     if data== 'tipss':
     
-        instruction= json.load(open('tips.json','r'))
+        instruction= json.load(open('./pages/tips.json','r'))
         FlexMessage= FlexSendMessage( 
             alt_text= '指令教學',
             contents= instruction
@@ -183,7 +183,7 @@ def handle_postback(event):
 
     elif data== 'identification':
 
-        prf= json.load(open('id.json','r'))
+        prf= json.load(open('./pages/id.json','r'))
         FlexMessage= FlexSendMessage(
             alt_text= '作者簡介', 
             contents= prf
@@ -200,7 +200,7 @@ def handle_postback(event):
 
         following_newest_crawler()
 
-        new= json.load(open('latest.json','r'))
+        new= json.load(open('./pages/latest.json','r'))
         FlexMessage= FlexSendMessage( 
             alt_text= "最新上架",
             contents= new
@@ -301,7 +301,7 @@ def handle_message(event):
     
     if message.text.lower()== '小小葉' or message.text.lower()== '貼圖葉': 
 
-        cnt= json.load(open("mainpage.json"))
+        cnt= json.load(open("./pages/mainpage.json"))
         FlexMessage= FlexSendMessage(
             alt_text= 'mainpage', 
             contents= cnt
@@ -310,7 +310,7 @@ def handle_message(event):
 
     elif message.text.lower() == 'profile' :
 
-        prf= json.load(open('id.json','r'))
+        prf= json.load(open('./pages/id.json','r'))
         FlexMessage= FlexSendMessage(
             alt_text= 'hello', 
             contents= prf
@@ -327,7 +327,7 @@ def handle_message(event):
             line_bot_api.reply_message(reply_token, sticker_message)
     
         else: 
-            
+            print(message.text)
             v= [] # url for users 
             for i in range(0, int(len(sidnumlist)), 2):
                 if len(anilist[0])>= 23:  
@@ -348,16 +348,16 @@ def handle_message(event):
                     else:
                         num= message.text.lower()[-2]+ message.text.lower()[-1]
 
-                    with open("single_sticker.json", 'r', encoding='utf-8') as load_f:
+                    with open("./pages/single_sticker.json", 'r', encoding='utf-8') as load_f:
                     
                         load_dict= json.load(load_f)
                         load_dict['hero']['contents'][0]['action']['uri']= v[int(num)-1]
                         load_dict['body']['contents'][0]['action']['uri']= v[int(num)-1]
-                        with open("single_sticker.json", 'w', encoding='utf-8') as f:
+                        with open("./pages/single_sticker.json", 'w', encoding='utf-8') as f:
 
                                 json.dump(load_dict, f, ensure_ascii=False)
 
-                    cst= json.load(open("single_sticker.json", 'r'))
+                    cst= json.load(open("./pages/single_sticker.json", 'r'))
                     FlexMessage= FlexSendMessage(
                         alt_text= 'single sticker', 
                         contents= cst
@@ -368,7 +368,7 @@ def handle_message(event):
 
                 elif str(message.text).find('connection')!= -1 or str(message.text).find('連結')!= -1 : 
 
-                    with open("connection_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+                    with open("./pages/connection_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
                         
                         load_dict= json.load(load_f)
                         load_dict['hero']['url']= coverlist[0]
@@ -381,11 +381,11 @@ def handle_message(event):
                                 load_dict['body']['contents'][i]['contents'][j]['action']['text']= v[count]
                                 count+= 1
                         
-                        with open("connection_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+                        with open("./pages/connection_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
 
                             json.dump(load_dict, f, ensure_ascii=False)
                     
-                    cst= json.load(open("connection_{}.json".format(int(len(sidnumlist)/2)),'r'))
+                    cst= json.load(open("./pages/connection_{}.json".format(int(len(sidnumlist)/2)),'r'))
                     FlexMessage= FlexSendMessage(
                         alt_text= 'connection_sticker', 
                         contents= cst
@@ -396,7 +396,7 @@ def handle_message(event):
 
                 else : 
 
-                    with open("custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
+                    with open("./pages/custom_{}.json".format(int(len(sidnumlist)/2)),'r',encoding='utf-8') as load_f:
                         
                         load_dict= json.load(load_f)
                         load_dict['hero']['url']= coverlist[0]
@@ -409,11 +409,11 @@ def handle_message(event):
                                 load_dict['body']['contents'][i]['contents'][j]['action']['uri']= v[count]
                                 count+= 1
                         
-                        with open("custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
+                        with open("./pages/custom_{}.json".format(int(len(sidnumlist)/2)),'w',encoding='utf-8') as f:
 
                             json.dump(load_dict, f, ensure_ascii=False)
                     
-                    cst= json.load(open("custom_{}.json".format(int(len(sidnumlist)/2)),'r'))
+                    cst= json.load(open("./pages/custom_{}.json".format(int(len(sidnumlist)/2)),'r'))
                     FlexMessage= FlexSendMessage(
                         alt_text= 'custom_sticker', 
                         contents= cst
@@ -435,7 +435,7 @@ def handle_message(event):
 
         following_newest_crawler()
 
-        new= json.load(open('latest.json','r'))
+        new= json.load(open('./pages/latest.json','r'))
         FlexMessage= FlexSendMessage(
             alt_text= '最新上架', 
             contents= new
